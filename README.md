@@ -39,7 +39,7 @@ $ python RPI/sensor.py
 ## Training Process
 
 ### Dataset Collection
-We collect the data by our team members with five pressure sensors, and for each category, we collect 120 data from two different person. The six categories included:
+We collect the data by our team members with five pressure sensors, and for each category, we collect 120 data from two different team members. The six categories included:
 1. Normal
 2. Leaning back
 3. Left sitting
