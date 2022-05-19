@@ -1,0 +1,2 @@
+spidev==3.5
+serial==3.5
