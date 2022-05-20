@@ -51,3 +51,7 @@ Our collected data is save in `res.csv`
 
 ### Training
 We use jupyter notebook to training our model. Users can access to our training code in `pose.ipynb`. Our mdoel architecture is shown below:
+
+<center>
+  <img src="assets/model.jpg" alt="model"/>
+</center>
