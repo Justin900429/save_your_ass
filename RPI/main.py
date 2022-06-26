@@ -1,12 +1,14 @@
-import spidev
-import serial
-import time
 import math
+
+import time
 from datetime import datetime, date
+import pytz
 
 import numpy as np
+
 import Adafruit_PCA9685
-import pytz
+import spidev
+import serial
 
 import firebase_admin
 from firebase_admin import credentials
@@ -39,8 +41,7 @@ machine_id = "01234567"
 tz = pytz.timezone("Asia/Taipei")
 day_total_second = 86400
 
-import Adafruit_PCA9685
-
+# Set up the motor PWM
 pwm = Adafruit_PCA9685.PCA9685()
 pwm.set_pwm_freq(490)
 
