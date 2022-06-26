@@ -1,33 +1,34 @@
-# README
+<h1 align="center">
+Save your ass
+</h1>
 
 ## Introduction
 This project is to design a smart cushion that can help one to sit straight and prevent the users from sedentary. To help users know more about there sitting poses, we also develop the app for users to trace their sitting condition.
 
 ### Code of EM9D
-> To run the code on EM9D, users should program the image file into the EM9D board.
-The folder `EM9D` includes the code for running the program on board. EM9D is used to do classify the sensor data into six different categories of sitting pose and send the predicted category back to RPI.
+To run the code on EM9D, users should program the image file into the EM9D board. The folder `EM9D` includes the code for running the program on board. EM9D is used to do classify the sensor data into six different categories of sitting pose and send the prediction back to RPI.
 ```
 Process
----
-| -> Send Connection
+---------------------------
+| -> 1. Send Connection
         |
         |
-        | Wait for response
+        | 2. Wait for response
         |
         v
-| -> Get Response
+| -> 3. Get Response
 |
-| -> Start receiving data -
-|                         |
-|                         |
-|          Loop           |
-|                         |
-∧                         v
-- - - Predict result <- - -
+| - - -> 4. Start receiving - - - - -
+|                                   |
+|                                   |
+|    Loop (Back to 4)               |
+∧                                   |
+|                                   v
+ - - - 5. Predict and send back <- - 
 ```
 
 ### RPI code
-RPI is used to collect the pressure data from the sensor and normalized the data to `-128~127` before sending to EM9D board with UART.
+RPI is used to collect the pressure data from the sensor and normalized the data to `-128 ~ 127` before sending to EM9D board with UART.
 
 ## Setup
 
@@ -80,7 +81,7 @@ We collect the data by our team members with eight pressure sensors, and for eac
 5. Crossed left leg
 6. Crossed right leg
 
-Our data is put in the `data` folder, and the filename represents the data class. The ith column name shows the pressure of the ith sensor.
+Our data is put in the `data` folder, and the filename represents the data class. The `i`th column name shows the pressure of the `i`th sensor.
 ```csv
 one,two,three,four,five,six,seven,eight
 44,8,50,99,97,45,30,38
