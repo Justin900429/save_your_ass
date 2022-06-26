@@ -95,6 +95,7 @@ To collect the data, execute `RPI/collect.py`.
 We use jupyter notebook to training our model. Users can access to our training code in `pose.ipynb`. Our mdoel architecture is shown below:
 
 <center>
+  <img src="assets/valid.svg" alt="training curve" />
   <img src="assets/model.jpg" alt="model"/>
 </center>
 
@@ -104,7 +105,7 @@ After training the model, we quantize the model to `int8` to ensure it can be us
 | Method | Accuracy | Stability |
 |:------:|:--------:|:---------:|
 |   PQ   |  99.81%  |    low    |
-|  QAT   |  99.17%  |   high    |
+|  QAT   |   100%   |    high   |
 
 The table above shows little differences between **PQ** and **QAT** because our input data is designed to be near integer (still in `float32 type`). However, the stability of our model increased dramatically after deploying on EM9D.
 
