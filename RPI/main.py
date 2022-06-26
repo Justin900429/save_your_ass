@@ -106,7 +106,7 @@ def normalize(x):
     """Normalize the data with mean and std"""
     max_num = np.amax(x)
     x = np.array(x) / max_num
-    x = (x * 255) - 127
+    x = (x * 255) - 128
     return [str(int(num)) + " " for num in x]
 
 
