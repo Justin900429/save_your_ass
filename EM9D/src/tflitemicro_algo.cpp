@@ -69,8 +69,11 @@ extern "C" int tflitemicro_algo_init()
 	}
 
 
-	static tflite::MicroMutableOpResolver<5> micro_op_resolver;
+	static tflite::MicroMutableOpResolver<4> micro_op_resolver;
 	micro_op_resolver.AddFullyConnected();
+  micro_op_resolver.AddMul();
+  micro_op_resolver.AddAdd();
+  micro_op_resolver.AddRelu();
 
 
 	// Build an interpreter to run the model with.
