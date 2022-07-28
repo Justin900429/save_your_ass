@@ -52,4 +52,3 @@ if __name__ == "__main__":
         res, columns=["one", "two", "three", "four", "five", "six", "seven", "eight"]
     ).to_csv(args.file_name, index=False)
     print()
-
