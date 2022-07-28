@@ -3,7 +3,7 @@ Save your ass
 </h1>
 
 ## Introduction
-This project is to design a smart cushion that can help one to sit straight and prevent the users from sedentary. To help users know more about there sitting poses, we also develop the app for users to trace their sitting condition.
+This project is to design a smart cushion that can help one to sit straight and prevent the users from being sedentary. To help users know more about there sitting poses, we also develop the app for users to trace their sitting condition.
 
 ### Code of EM9D
 To run the code on EM9D, users should program the image file into the EM9D board. The folder `EM9D` includes the code for running the program on board. EM9D is used to do classify the sensor data into six different categories of sitting pose and send the prediction back to RPI.
