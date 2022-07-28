@@ -117,3 +117,7 @@ $ xxd -i generated/pose.tflite > model.h
 
 ## User Manual
 Using our product is quite simple, users just need to buy our product and plug in the device. Then our product can starting running. If users want to setup our project from scratch, please refer to [Setup](#setup).
+
+## Demonstration
+1. [Link 1](https://youtu.be/EHoH52kiYqw)
+2. [Link 2](https://drive.google.com/drive/folders/18BanDFGr8V2MhJQJmjYqbN_WAPSvKNdI?usp=sharing)
